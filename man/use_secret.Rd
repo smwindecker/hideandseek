@@ -4,7 +4,7 @@
 \alias{use_secret}
 \title{Is secret available?}
 \usage{
-use_secret()
+use_secret(key)
 }
 \value{
 TRUE or FALSE if secret is available in environment
