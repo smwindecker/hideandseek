@@ -1,0 +1,2 @@
+env:
+  my_input_key: ${{TEST_INSTALL_CODE}}
