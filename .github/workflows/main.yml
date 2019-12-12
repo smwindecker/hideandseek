@@ -1,2 +1,16 @@
-env:
-  my_input_key: ${{TEST_INSTALL_CODE}}
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps: 
+    - name: Testing secret
+      env: # Or as an environment variable
+        GITHUB_TOKEN: ${{ secrets.TEST_INSTALL_CODE }}
+      with: 
+        args: comment "Here's my key."
+      
